@@ -16,7 +16,7 @@ import { TopNavComponent } from './top-nav/top-nav.component';
 import { SideNavTogglerComponent } from './side-nav-toggler/side-nav-toggler.component';
 import { LayoutComponent } from './layout/layout.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
-import { LoginSignupCardComponent } from './login-signup-card/login-signup-card.component';
+import { SignupCardComponent } from './signup-card/signup-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +30,7 @@ import { LoginSignupCardComponent } from './login-signup-card/login-signup-card.
     SideNavTogglerComponent,
     LayoutComponent,
     SideNavComponent,
-    LoginSignupCardComponent
+    SignupCardComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
