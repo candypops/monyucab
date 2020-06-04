@@ -16,6 +16,7 @@ import { TopNavComponent } from './top-nav/top-nav.component';
 import { SideNavTogglerComponent } from './side-nav-toggler/side-nav-toggler.component';
 import { LayoutComponent } from './layout/layout.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { LoginSignupCardComponent } from './login-signup-card/login-signup-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     TopNavComponent,
     SideNavTogglerComponent,
     LayoutComponent,
-    SideNavComponent
+    SideNavComponent,
+    LoginSignupCardComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -36,7 +38,7 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'signup', component: SignupFormComponent },
+      { path: 'sign-up', component: SignupFormComponent },
       { path: 'login', component: LoginFormComponent },
       { path: 'layout', component: LayoutComponent }
     ])
