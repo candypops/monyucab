@@ -18,6 +18,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { SignupCardComponent } from './signup-card/signup-card.component';
 import { VentanaModalComponent } from './ventana-modal/ventana-modal.component';
+import { VistaPerfilComponent } from './vista-perfil/vista-perfil.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import { VentanaModalComponent } from './ventana-modal/ventana-modal.component';
     LayoutComponent,
     SideNavComponent,
     SignupCardComponent,
-    VentanaModalComponent
+    VentanaModalComponent,
+    VistaPerfilComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -42,7 +44,8 @@ import { VentanaModalComponent } from './ventana-modal/ventana-modal.component';
       { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'sign-up', component: SignupFormComponent },
       { path: 'login', component: LoginFormComponent },
-      { path: 'layout', component: LayoutComponent }
+      { path: 'layout', component: LayoutComponent },
+      { path: 'perfil', component: VistaPerfilComponent }
     ])
   ],
   providers: [
