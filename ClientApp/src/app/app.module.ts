@@ -19,6 +19,7 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { SignupCardComponent } from './signup-card/signup-card.component';
 import { VentanaModalComponent } from './ventana-modal/ventana-modal.component';
 import { VistaPerfilComponent } from './vista-perfil/vista-perfil.component';
+import { TablaMovimientosComponent } from './tabla-movimientos/tabla-movimientos.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,8 @@ import { VistaPerfilComponent } from './vista-perfil/vista-perfil.component';
     SideNavComponent,
     SignupCardComponent,
     VentanaModalComponent,
-    VistaPerfilComponent
+    VistaPerfilComponent,
+    TablaMovimientosComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
