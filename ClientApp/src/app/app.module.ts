@@ -20,6 +20,9 @@ import { SignupCardComponent } from './signup-card/signup-card.component';
 import { VentanaModalComponent } from './ventana-modal/ventana-modal.component';
 import { VistaPerfilComponent } from './vista-perfil/vista-perfil.component';
 import { TablaMovimientosComponent } from './tabla-movimientos/tabla-movimientos.component';
+import { BloquearComponent } from './bloquear/bloquear.component';
+import { TransferirComponent } from '../transferir/transferir.component';
+import { TransferirCardComponent } from '../transferir-card/transferir-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +39,10 @@ import { TablaMovimientosComponent } from './tabla-movimientos/tabla-movimientos
     SignupCardComponent,
     VentanaModalComponent,
     VistaPerfilComponent,
-    TablaMovimientosComponent
+    TablaMovimientosComponent,
+    BloquearComponent,
+    TransferirComponent,
+    TransferirCardComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
