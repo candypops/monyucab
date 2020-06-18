@@ -1,7 +1,7 @@
 <nav *ngIf="nav.visible">
   <header>
     <nav
-      class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+      class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
       
       <a class="navbar-brand" href="#">
       <img src="../../assets/img/logo-inv.png" class="img-responsive" style="max-width: 50px ;">  monyucab
@@ -28,18 +28,18 @@
               [routerLinkActive]="['link-active']"
               [routerLinkActiveOptions]="{ exact: true }"
             >
-              <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
+              <a class="nav-link text-light" [routerLink]="['/']">Home</a>
             </li>
             
             <li class="nav-item" [routerLinkActive]="['link-active']">
-              <a class="nav-link text-dark" [routerLink]="['/login']">Inicia Sessión</a>
+              <a class="nav-link text-light" [routerLink]="['/login']">Inicia Sessión</a>
             </li>
 
             <li class="nav-item" [routerLinkActive]="['link-active']">
-              <a class="nav-link text-dark" [routerLink]="['/signup']">Registrarse</a>
+              <a class="nav-link text-light" [routerLink]="['/signup']">Registrarse</a>
             </li>
             <li class="nav-item" [routerLinkActive]="['link-active']">
-              <a class="nav-link text-dark" [routerLink]="['/layout']" (click)="nav.hide()">Layout</a>
+              <a class="nav-link text-light" [routerLink]="['/layout']" (click)="nav.hide()">Layout</a>
             </li>
 
           </ul>
